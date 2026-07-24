@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Tahona · Panel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="app-shell">
+
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <div class="logo-dot">☕</div>
+      <span>La Tahona</span>
+    </div>
+    <nav class="sidebar-nav" id="sidebarNav"></nav>
+    <div class="sidebar-user">
+      <div class="who" id="sbUserName">-</div>
+      <div class="role" id="sbUserRole">-</div>
+      <button class="logout-btn" id="logoutBtn">Cerrar sesión</button>
+    </div>
+  </aside>
+
+  <div class="main-area">
+    <header class="topbar">
+      <button class="burger" id="burgerBtn">☰</button>
+      <h1 class="topbar-title" id="viewTitle">Panel</h1>
+      <span class="topbar-date" id="topDate"></span>
+    </header>
+
+    <main class="view" id="viewContent"></main>
+  </div>
+</div>
+
+<div id="modalRoot"></div>
+<div class="toast-container" id="toastContainer"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
